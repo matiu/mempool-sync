@@ -1,3 +1,3 @@
 # mempool-sync
 
-./index.js --configFile configFileHere.json
+`./index.js --configFile configFileHere.json`
