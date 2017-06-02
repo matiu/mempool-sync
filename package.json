@@ -1,0 +1,15 @@
+{
+  "name": "mempool-sync",
+  "version": "0.1.0",
+  "description": "Syncs mempools",
+  "dependencies": {
+    "async": "~2.4.1",
+    "request": "~2.81.0",
+    "commander": "~2.9.0",
+    "lodash": "~4.17.4"
+  },
+  "main": "index.js",
+  "author": "Justin Langston <nitsujlangston@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {}
+}
