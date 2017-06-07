@@ -73,7 +73,9 @@ function syncNode(node, unionPool, progressBar, cb) {
         missingInputs.push(txid);
       } else if (err) {
         progressBar && progressBar.tick();
-        node.failures.push([txid, err.message]);
+        if (err.message != 'transaction already in block chain') {
+          node.failures.push([txid, err.message]);
+        }
       } else {
         progressBar && progressBar.tick();
       };
