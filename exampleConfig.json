@@ -1,5 +1,6 @@
 [
   {
+    "name": "node1",
     "host": "127.0.0.1",
     "port": 8333,
     "username": "testuser",
@@ -7,6 +8,7 @@
     "protocol":"http"
   },
   {
+    "name": "node2",
     "host": "127.0.0.1",
     "port": 8333,
     "username": "testuser",
