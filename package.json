@@ -4,9 +4,10 @@
   "description": "Syncs mempools",
   "dependencies": {
     "async": "~2.4.1",
-    "request": "~2.81.0",
     "commander": "~2.9.0",
-    "lodash": "~4.17.4"
+    "lodash": "~4.17.4",
+    "progress": "^2.0.0",
+    "request": "~2.81.0"
   },
   "main": "index.js",
   "author": "Justin Langston <nitsujlangston@gmail.com>",
