@@ -102,7 +102,7 @@ fetchMempools(nodes, function(err) {
     return;
   }
   var unionPool = getUnionPool(nodes);
-  console.log('Syncing with blockdozer (size: '+unionPool.items.length + ')';
+  console.log('Syncing with blockdozer (size: '+unionPool.items.length + ')');
 
   var failures = [];
   async.eachSeries(unionPool.items, function(txid, done) {
