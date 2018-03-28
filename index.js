@@ -63,9 +63,9 @@ function sendTransaction(tx, node, cb) {
     strictSSL: false
   }, function (err, response, body) {
     if (body && body.error) {
-      callback(body.error);
+      cb(body.error);
     } else {
-      callback(err, (body && body.result) || body);
+      cb(err, (body && body.result) || body);
     }
   });
 }
