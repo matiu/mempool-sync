@@ -53,7 +53,7 @@ function getTransaction(txid, node, cb) {
   rpc(node, 'getrawtransaction', [txid], cb); 
 }
 
-function sendTransaction(tx, node, cb) {
+function sendTransaction(tx, cb) {
   request.post({
     url: 'https://blockdozer.com/insight-api/tx/send',
     body: {
@@ -70,10 +70,10 @@ function sendTransaction(tx, node, cb) {
   });
 }
 
-function syncTransaction(txid, sourceNode, targetNode, cb) {
+function syncTransaction(txid, sourceNode, cb) {
   getTransaction(txid, sourceNode, function(err, tx) {
     if (err) return cb(err);
-    sendTransaction(tx, targetNode, cb);
+    sendTransaction(tx, cb);
   });
 }
 
